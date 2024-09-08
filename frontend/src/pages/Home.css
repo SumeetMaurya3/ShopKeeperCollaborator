@@ -1,0 +1,232 @@
+.home__bg {
+    background-image: url(https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);
+    height: 92vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.home-message-icon {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+*{
+    margin:0;
+    padding:0;
+  }
+  body{
+    overflow:hidden;
+  }
+  #page{
+  width:100%;
+  height:100vh;
+  }
+  .glow-on-hover {
+  width: 157px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  top: -55vh;
+  left: 1.5vh;
+  z-index: 0;
+  border-radius: 20px;
+  margin-right: 11vh;
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  }
+  
+  .glow-on-hover:active {
+  color: #000
+  }
+  
+  .glow-on-hover:active:after {
+  background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+  opacity: 1;
+  }
+  
+  .glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  }
+  
+  @keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+  }
+  @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+  
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  }
+  
+  .content {
+    font-size:2vh;
+    position: relative;
+    width: 100px;
+    top: 10vh;
+    left: 10.8vh;
+  }
+  
+  .content h4 {
+  /* color: #fff; */
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  }
+  
+  .content h4:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #494949;
+  }
+  
+  .content h4:nth-child(2) {
+  color: #fdfeff;
+  animation: animate 4s ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  }
+  .ml4 {
+    position: relative;
+    top: -58vh;
+    left: 24vh;
+    font-weight: 900;
+    font-size: 7.5em;
+  }
+  .ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0.3em;
+    right: 0;
+    opacity: 0; 
+    color:beige;
+  }
+  .backgroundgif{
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+  }
+
+
+
+  /*Text animation*/
+
+  
+  .words {
+    color: #151D28;
+    font-size: 0;
+    line-height: 1.5;
+  }
+  
+  .words span {
+    font-size: 5rem;
+    display: inline-block;
+    animation: move 3s ease-in-out infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(-30%, 0);
+    }
+    50% {
+      text-shadow: 0 25px 50px rgba(0, 0, 0);
+    }
+    100% {
+      transform: translate(30%, 0);
+    }
+  }
+  
+  .words span:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .words span:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  .words span:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  
+  .words span:nth-child(5) {
+    animation-delay: 2s;
+  }
+  
+  .words span:nth-child(6) {
+    animation-delay: 2.5s;
+  }
+  
+  .words span:nth-child(7) {
+    animation-delay: 3s;
+  }
+  .textanimationnew{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
